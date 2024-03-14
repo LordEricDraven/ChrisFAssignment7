@@ -20,6 +20,13 @@ class CustomArrayListTest {
 		
 		assertEquals(1, expectedResult);
 		assertEquals(1, expectedSize);
+		
+		// These lines below should throw IndexOutOfBoundsException
+		sut.remove(10);
+		sut.get(10);
+		sut.add(10, 100);
+		
+		
 	}
 	
 	@Test
